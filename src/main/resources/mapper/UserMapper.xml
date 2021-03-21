@@ -10,4 +10,11 @@
     <insert id="insertUser" parameterType="entity.User">
         INSERT INTO user VALUES (#{id},#{username},#{age},#{score})
     </insert>
+    <update id="updateUserById">
+        UPDATE user SET
+        age = #{age},
+        username = #{username},
+        score = #{score}
+        WHERE id = #{id}
+    </update>
 </mapper>

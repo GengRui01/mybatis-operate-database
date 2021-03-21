@@ -33,4 +33,12 @@ public interface UserMapper {
      * @return
      */
     int insertUser(User user);
+
+    /**
+     * 修改用户信息
+     *
+     * @param user
+     * @return
+     */
+    int updateUserById(User user);
 }
