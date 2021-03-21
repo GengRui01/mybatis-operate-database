@@ -1,0 +1,13 @@
+/target/
+/target/classes/
+/target/classes/entity/
+/target/classes/entity/User.class
+/target/classes/mapper/
+/target/classes/mybatis-config.xml
+/target/classes/mybatis_demo.sql
+/target/generated-sources/
+/target/generated-sources/annotations/
+/target/generated-test-sources/
+/target/generated-test-sources/test-annotations/
+/target/test-classes/
+/target/test-classes/UserTest.class
