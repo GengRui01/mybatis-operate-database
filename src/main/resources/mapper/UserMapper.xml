@@ -7,4 +7,7 @@
     <select id="selectUserList" resultType="entity.User">
         SELECT * FROM user
     </select>
+    <insert id="insertUser" parameterType="entity.User">
+        INSERT INTO user VALUES (#{id},#{username},#{age},#{score})
+    </insert>
 </mapper>

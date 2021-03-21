@@ -25,4 +25,12 @@ public interface UserMapper {
      * @return
      */
     List<User> selectUserList();
+
+    /**
+     * 新增用户信息
+     *
+     * @param user
+     * @return
+     */
+    int insertUser(User user);
 }
