@@ -28,6 +28,9 @@ public class UserTest {
         UserMapper mapper = session.getMapper(UserMapper.class);
         // 调用通过用户id查询用户信息的方法
         User user = mapper.selectUserById(1);
+        // 调用查询所有用户信息的方法
+        List<User> userList = mapper.selectUserList();
+        userList.forEach(u -> System.out.println(user));
         // 关闭会话
         session.close();
     }

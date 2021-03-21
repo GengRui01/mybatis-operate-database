@@ -4,4 +4,7 @@
     <select id="selectUserById" resultType="entity.User">
         SELECT * FROM user WHERE id = #{id}
     </select>
+    <select id="selectUserList" resultType="entity.User">
+        SELECT * FROM user
+    </select>
 </mapper>

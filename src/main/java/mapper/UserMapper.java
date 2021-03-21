@@ -18,4 +18,11 @@ public interface UserMapper {
      * @return
      */
     User selectUserById(Integer id);
+
+    /**
+     * 查询所有用户信息
+     *
+     * @return
+     */
+    List<User> selectUserList();
 }
