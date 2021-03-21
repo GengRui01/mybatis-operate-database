@@ -49,16 +49,25 @@ public class UserTest {
 //        List<User> userListAfter = mapper.selectUserList();
 //        userListAfter.forEach(u -> System.out.println(u));
 
-        // 调用通过用户id查询用户信息的方法
-        User userBefore = mapper.selectUserById(6);
-        System.out.println(userBefore);
-        // 把成绩改为900
-        userBefore.setScore(900);
-        // 调用修改用户信息的方法
-        mapper.updateUserById(userBefore);
-        // 调用通过用户id查询用户信息的方法
-        User userAfter = mapper.selectUserById(6);
-        System.out.println(userAfter);
+//        // 调用通过用户id查询用户信息的方法
+//        User userBefore = mapper.selectUserById(6);
+//        System.out.println(userBefore);
+//        // 把成绩改为900
+//        userBefore.setScore(900);
+//        // 调用修改用户信息的方法
+//        mapper.updateUserById(userBefore);
+//        // 调用通过用户id查询用户信息的方法
+//        User userAfter = mapper.selectUserById(6);
+//        System.out.println(userAfter);
+
+        // 调用查询所有用户信息的方法
+        List<User> userListBefore = mapper.selectUserList();
+        userListBefore.forEach(u -> System.out.println(u));
+        // 调用删除用户信息的方法
+        int count = mapper.deleteUserById(6);
+        // 调用查询所有用户信息的方法
+        List<User> userListAfter = mapper.selectUserList();
+        userListAfter.forEach(u -> System.out.println(u));
 
         // 提交session
         session.commit();
