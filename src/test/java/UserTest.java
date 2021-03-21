@@ -29,9 +29,11 @@ public class UserTest {
 //        // 调用通过用户id查询用户信息的方法
 //        User user = mapper.selectUserById(1);
 //        System.out.println(user);
+
 //        // 调用查询所有用户信息的方法
 //        List<User> userList = mapper.selectUserList();
 //        userList.forEach(u -> System.out.println(u))
+
         // 调用查询所有用户信息的方法
         List<User> userListBefore = mapper.selectUserList();
         userListBefore.forEach(u -> System.out.println(u));
@@ -46,6 +48,9 @@ public class UserTest {
         // 调用查询所有用户信息的方法
         List<User> userListAfter = mapper.selectUserList();
         userListAfter.forEach(u -> System.out.println(u));
+
+        // 提交session
+        session.commit();
         // 关闭会话
         session.close();
     }
